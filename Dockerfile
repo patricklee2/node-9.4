@@ -1,4 +1,4 @@
-FROM  oryxprod/node-9.4:20190103.1
+FROM  oryxprod/node-9.4:20181222.1
 
 LABEL maintainer="Azure App Services Container Images <appsvc-images@microsoft.com>"
 
@@ -18,7 +18,7 @@ RUN npm install -g pm2 \
      && apk add curl \
      && apk add wget \
      && apk add tcptraceroute \
-     && apk add bash \
+     && apk add bash
 
 
 # https://github.com/dockage/alpine/blob/master/3.8/openrc/Dockerfile
